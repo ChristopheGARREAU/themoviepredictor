@@ -1,6 +1,8 @@
+TheMoviePredictor scrpit
+Author : Christophe GARREAU
+
 import mysql.connector
 
-print ('Hello World')
 
 cnx = mysql.connector.connect(user='predictor', password='predictor',
                               host='127.0.0.1', #local host
@@ -31,6 +33,8 @@ people_id = cursor.lastrowid
 
 # mettre dans la database
 cnx.commit()
+
+
 
 # fermeture de l'outils cursor
 cursor.close()
